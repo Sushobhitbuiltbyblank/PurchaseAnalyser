@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="PHTableHeaderView" id="iN0-l3-epB" customClass="PHTableHeaderView" customModule="PurchaseAnalyser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5w-4X-zFA">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfa-U0-FhX">
+                            <rect key="frame" x="16" y="14.5" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="textLightGray"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="headerBG"/>
+                    <constraints>
+                        <constraint firstItem="yfa-U0-FhX" firstAttribute="leading" secondItem="a5w-4X-zFA" secondAttribute="leading" constant="16" id="7du-3y-bTO"/>
+                        <constraint firstItem="yfa-U0-FhX" firstAttribute="centerY" secondItem="a5w-4X-zFA" secondAttribute="centerY" id="9Lg-nM-8tv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="headerBG"/>
+            <constraints>
+                <constraint firstItem="a5w-4X-zFA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3C0-Vv-gU7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="a5w-4X-zFA" secondAttribute="trailing" id="3Ds-tG-FMw"/>
+                <constraint firstAttribute="bottom" secondItem="a5w-4X-zFA" secondAttribute="bottom" id="fQg-Pg-mDd"/>
+                <constraint firstItem="a5w-4X-zFA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="h25-iV-MfR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleL" destination="yfa-U0-FhX" id="HXM-fV-weM"/>
+            </connections>
+            <point key="canvasLocation" x="76.811594202898561" y="-138.61607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="headerBG">
+            <color red="0.64313725490196072" green="0.92156862745098034" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textLightGray">
+            <color red="0.4823529411764706" green="0.55294117647058827" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

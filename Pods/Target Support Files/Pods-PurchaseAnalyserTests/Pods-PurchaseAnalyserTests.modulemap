@@ -1,0 +1,6 @@
+framework module Pods_PurchaseAnalyserTests {
+  umbrella header "Pods-PurchaseAnalyserTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
